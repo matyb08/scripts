@@ -1,5 +1,7 @@
 #!/bin/python3
 
+# Script for downloading shitpost videos
+
 # TODO:
 # An OPTION to remove tmp files (if the download was interrupted)
 # Enhance logging (also log final filenames)

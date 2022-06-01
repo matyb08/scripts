@@ -3,7 +3,7 @@
 # Open file browser more easily
 
 if [ $# -eq 0 ]; then # '$#' gives the number of input arguments the script was passed
-	dolphin > /dev/null 2>&1 &
+	dolphin . > /dev/null 2>&1 &
 	exit 0
 fi
 

@@ -11,6 +11,8 @@ DIR_PATH = sys.argv[1]
 
 for file_name in os.listdir(DIR_PATH):
     if file_name.startswith('+') and file_name.endswith('.mp3'):
+        file_name = file_name.replace('$', '\\$')
+
         # Extract the image from mp3 file
         os.system(
             'ffmpeg -i "'
@@ -47,6 +49,7 @@ for file_name in os.listdir(DIR_PATH):
         # Clean up
         os.remove(os.path.join(DIR_PATH, 'tmp-art-uncropped.jpg'))
         os.remove(os.path.join(DIR_PATH, 'tmp-art-cropped.jpg'))
+        file_name = file_name.replace('\\$', '$')
         os.remove(os.path.join(DIR_PATH, file_name))
 
 

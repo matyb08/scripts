@@ -32,6 +32,6 @@ yt-dlp --extract-audio --audio-quality 0 --audio-format "mp3" --ignore-errors --
 yt-dlp --extract-audio --audio-quality 0 --audio-format "mp3" --ignore-errors --add-metadata --download-archive "$DOWNLOAD_ARCHIVE_PATH" --no-post-overwrites --embed-thumbnail --output "$KPOP_DIR_PATH""+%(title)s %(id)s.%(ext)s" "$KPOP_PLAYLIST"
 
 # Fixing album art
-fix-album-art.py $THE_PLAYLIST_DIR_PATH
-fix-album-art.py $NOT_CURRENT_POP_DIR_PATH
-fix-album-art.py $KPOP_DIR_PATH
+fix-album-art.py "$THE_PLAYLIST_DIR_PATH"
+fix-album-art.py "$NOT_CURRENT_POP_DIR_PATH"
+fix-album-art.py "$KPOP_DIR_PATH"

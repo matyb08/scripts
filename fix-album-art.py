@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 # Script for fixing album art when downloading music from YouTube.
 # Script removes left & right colored padding, thus making album art image squared.

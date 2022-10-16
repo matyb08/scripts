@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 
 # Convert all videos that are not previewable
 # by Discord to mp4

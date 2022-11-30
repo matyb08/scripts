@@ -41,7 +41,7 @@ parser.add_argument(
     '-e', '--extension',
     dest='extension', metavar='extension',
     required=False, action='store',
-    help='File extension of generated clips'
+    help='File format extension of generated clips'
 )
 
 args = parser.parse_args()
@@ -108,7 +108,7 @@ if command_download.returncode != 0:
     exit(command_download.returncode)
 
 video_id = whole_video_name.split('.')[0]
-extension = whole_video_path.split('.')[-1] if not args.extension else args.extension  # Much faster if mp4
+extension = 'mp4' if not args.extension else args.extension
 
 bar = pg.Bar('Clipping', max=len(clips), suffix='%(index)d/%(max)d clips')
 bar.start()

@@ -53,4 +53,4 @@ for file_name in os.listdir(DIR_PATH):
         os.remove(os.path.join(DIR_PATH, file_name))
 
 
-print(f'\'{DIR_PATH.split("/")[-2]}\' done.')
+print(f'\'{DIR_PATH}\' done.')

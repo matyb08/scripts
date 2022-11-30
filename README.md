@@ -28,3 +28,12 @@ Installed and added to PATH:
 
 Additional Python libs:
 - progress
+___
+## f.sh
+### Open files or folders from command line with default apps. Works with native Linux and WSL.
+___
+## extracc.py
+### Make separate clips from a compilation video
+___
+## shitpost.py
+### Download memes (video) more efficiently

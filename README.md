@@ -1,5 +1,4 @@
-## extracc.py
-### A simple video downloading and clipping tool
+## `extracc.py` - simple video downloading and clipping tool
 
 ```commandline
 usage: extracc.py [-h] -u url -c clips [-d directory] [-q quality] [-e extension]
@@ -29,11 +28,11 @@ Installed and added to PATH:
 Additional Python libs:
 - progress
 ___
-## f.sh
-### Open files or folders from command line with default apps. Works with native Linux and WSL.
+
+## `f.sh` - open files or folders from command line with default apps. Works with native Linux and WSL.
 ___
-## extracc.py
-### Make separate clips from a compilation video
+
+## `shitpost.py` - download memes (video) more efficiently
 ___
-## shitpost.py
-### Download memes (video) more efficiently
+
+## `apod.py` - NASA Astronomy Picture of the Day wallpaper setter

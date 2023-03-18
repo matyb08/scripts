@@ -4,10 +4,11 @@ import requests
 import subprocess
 import os
 import ctypes
+import sys
 from bs4 import BeautifulSoup
 from slugify import slugify
 
-os.chdir(r'.') # set ur path
+os.chdir(sys.argv[1])
 
 soup = BeautifulSoup(requests.get('https://apod.nasa.gov/apod/astropix.html').text, 'lxml')
 
@@ -18,6 +19,10 @@ image_extension = image_url.split('/')[-1].split('.')[-1]
 image_unique_name = image_url.split('/')[-1].split('.')[-2]
 image_filename = f'{slugify(title)} ({image_unique_name}).{image_extension}'
 description_filename = f'{slugify(title)} ({image_unique_name}).txt'
+
+# duplication check
+if os.path.isfile(image_filename):
+  exit(0)
 
 image_data = requests.get(image_url).content
 with open(image_filename, 'wb') as f:

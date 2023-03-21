@@ -9,10 +9,13 @@ from bs4 import BeautifulSoup
 from slugify import slugify
 
 os.chdir(sys.argv[1])
-
 soup = BeautifulSoup(requests.get('https://apod.nasa.gov/apod/astropix.html').text, 'lxml')
 
-image_url = 'https://apod.nasa.gov/apod/' + soup.select('body > center:nth-child(1) > p:nth-child(3) > a')[0]['href']
+try:
+  image_url = 'https://apod.nasa.gov/apod/' + soup.select('body > center:nth-child(1) > p:nth-child(3) > a')[0]['href']
+except IndexError: # not an image post
+  exit(1)
+
 description = soup.select('body > p:nth-child(3)')[0].text.replace('\n\n', ' ').replace('\n', ' ').replace('  ', ' ').strip() + '\n\n' + soup.select('body > center:nth-child(1) > p:nth-child(3)')[0].text.strip()
 title = soup.select('body > center:nth-child(2) > b:nth-child(1)')[0].text.strip()
 image_extension = image_url.split('/')[-1].split('.')[-1]

@@ -36,3 +36,6 @@ ___
 ___
 
 ## `apod.py` - NASA Astronomy Picture of the Day wallpaper setter
+___
+
+## `discordify.sh` - compress videos to just below 8MB

@@ -1,6 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-# Script for downloading shitpost videos
+# Download memes (video) more efficiently
+
+# REQUIREMENTS: yt-dlp, ffmpeg
 
 # TODO:
 # An OPTION to remove tmp files (if the download was interrupted)

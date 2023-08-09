@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Download single tracks or whole playlists in best sound quality
 # ALL OF THE ASSOCCIATED SCRIPTS (fix-album-art.py) OR THE WHOLE SCRIPTS FOLDER (even better), MUST BE ADDED TO PATH
+
+# REQUIREMENTS: yt-dlp, ffmpeg
 
 LINK=$1
 

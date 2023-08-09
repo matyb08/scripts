@@ -1,4 +1,8 @@
-# pip install requests beautifulsoup4 lxml python-slugify
+#!/usr/bin/env python3
+
+# NASA Astronomy Picture of the Day wallpaper setter
+
+# REQUIREMENTS: pip install requests beautifulsoup4 lxml python-slugify
 
 import requests
 import subprocess

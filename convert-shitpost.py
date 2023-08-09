@@ -1,7 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-# Convert all videos that are not previewable
-# by Discord to mp4
+# Convert all videos that are not previewable by Discord to mp4
+
+# REQUIREMENTS: /
 
 import os
 import sys

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-#
+
+# Compress videos to just below 8MB
 # Slightly adjusted from original https://stackoverflow.com/a/61146975
-#
 # Usage: ./discordify.sh video.mp4
-#
+
+# REQUIREMENTS: ffmpeg
 
 T_SIZE=8 # target size in MB
 T_FILE="${1%.*}-discordable.mp4" # filename out

@@ -1,6 +1,9 @@
 #!/usr/bin/env sh
 
-# Open files or folders with default apps
+# Open files or folders from command line with default apps.
+# Works with native Linux and WSL.
+
+# REQUIREMENTS: /
 
 if [ $# -eq 0 ]; then # '$#' gives the number of input arguments the script was passed
 	if grep -qi microsoft /proc/version; then

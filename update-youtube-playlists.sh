@@ -1,7 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Update my YouTube music playlists
 # ALL OF THE ASSOCCIATED SCRIPTS (fix-album-art.py) OR THE WHOLE SCRIPTS FOLDER (even better), MUST BE ADDED TO PATH
+
+# REQUIREMENTS: yt-dlp, ffmpeg
 
 # 'The Playlist'
 THE_PLAYLIST_PLAYLIST=$(echo $THE_PLAYLIST_PLAYLIST_YOUTUBE)

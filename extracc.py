@@ -1,4 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+
+# Simple video downloading and clipping tool
+
+# REQUIREMENTS: yt-dlp, ffmpeg, pip install progress
 
 import argparse
 import shutil

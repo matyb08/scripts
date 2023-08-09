@@ -1,6 +1,8 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Open websites from URLs in a browser
+
+# REQUIREMENTS: /
 
 import os
 import sys

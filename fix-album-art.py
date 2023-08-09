@@ -1,7 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 # Script for fixing album art when downloading music from YouTube.
 # Script removes left & right colored padding, thus making album art image squared.
+
+# REQUIREMENTS: ffmpeg, pip install Pillow
 
 import os
 import sys

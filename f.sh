@@ -7,8 +7,8 @@
 
 if [ $# -eq 0 ]; then # at least one path is given
     if grep -qi microsoft /proc/version; then
-        if command -v totalcmd.exe >/dev/null 2>&1; then
-            powershell.exe -c "totalcmd.exe /O /T /L=\"$(wslpath -aw ".")\""
+        if command -v totalcmd64.exe >/dev/null 2>&1; then
+            powershell.exe -c "totalcmd64.exe /O /T /L=\"$(wslpath -aw ".")\""
         else
             powershell.exe -c "start '$(wslpath -aw ".")'"
         fi
@@ -21,8 +21,8 @@ if [ $# -eq 0 ]; then # at least one path is given
 else # no path is given
     if grep -qi microsoft /proc/version; then
         for path in "$@"; do
-            if [ -d "$path" ] && command -v totalcmd.exe >/dev/null 2>&1; then
-                powershell.exe -c "totalcmd.exe /O /T /L=\"$(wslpath -aw "$path")\""
+            if [ -d "$path" ] && command -v totalcmd64.exe >/dev/null 2>&1; then
+                powershell.exe -c "totalcmd64.exe /O /T /L=\"$(wslpath -aw "$path")\""
             else
                 powershell.exe -c "start '$(wslpath -aw "$path")'"
             fi
